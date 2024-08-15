@@ -5,9 +5,6 @@ I am simply against the clock to get this sorted ASAP :)
 
 */
 
-
-
-
 /*
 * {
     border: solid black 1px;
@@ -24,7 +21,7 @@ body{
     justify-content: space-between;
     display: flex;
     margin: 1%;
-    border-bottom: 2px solid #152f52;
+    border-bottom: 3px solid #3e5777;
 }
 
 .navbar-logo {
@@ -67,6 +64,11 @@ h3 {
     color: #152f52;
 }
 
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #152f52;
+}
 
 
 
@@ -77,11 +79,9 @@ h3 {
     height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
 }
 
 .product-card {
-    border: 1px solid black;
     align-items: center;
     justify-content: center;
 }
@@ -103,5 +103,92 @@ h3 {
 
 .product-description {
     margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.product-description h3 {
+    font-size: 48pt;
+}
+
+.product-description h4 {
+    font-size: 28pt;
+}
+
+.product-description p {
+    font-size: 14pt;
+}
+
+a {
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #afc4e0;
+    transition: 0.5s;
+}
+
+/* Galary styling */
+
+.galary-title {
+    font-family: "Hepta Slab", serif;
+    font-weight: 700;
+    color: #152f52;
+    font-size: 28pt;
+    padding-left: 3%;
+}
+
+.galary {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galary-image {
+    border-radius: 50px;
+    max-width: 90%;
+}
+
+/* Footer styling */
+
+footer {
+    padding: 1em;
+    border-top: 2px solid #3e5777;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+
+    .product-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .galary-title{
+        margin-top: 150%;
+    }
+
+    .galary {
+        
+        grid-template-columns: 1fr;
+        padding-bottom: 70%;
+    }
+
+    .image-wrapper {
+        padding-top: 5%;
+        display: flex;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    footer{
+        display: block;
+    }
+}
